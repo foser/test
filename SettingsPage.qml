@@ -12,7 +12,6 @@ Page {
         Item{
        id: firstItem
        Loader {
-       // index 0
        id: pageOneLoader
        source: "DevicesPage.qml"
        anchors.fill: parent
@@ -23,7 +22,6 @@ Page {
        Item{
        id: secondItem
        Loader {
-       // index 1
        id: pageSecondLoader
        source: "Page2.qml"
        anchors.fill: parent
@@ -34,7 +32,6 @@ Page {
        Item{
        id: thirdItem
        Loader {
-       // index 2
        id: pageThirdLoader
        source: "Page3.qml"
        anchors.fill: parent
@@ -49,7 +46,7 @@ Page {
         currentIndex: swipeView.currentIndex
 
         TabButton {
-            text: "First"
+            text: "Устройства"
         }
         TabButton {
             text: "Second"
