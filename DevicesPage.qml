@@ -4,69 +4,75 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 
-GridView{
+Page{
+    id: view
 
     TableView {
         id:deviceTableView
-        height: parent.height
         width: 200
+        anchors.bottomMargin: 5
+        anchors.rightMargin: 5
+        anchors.leftMargin: 8
+        currentRow: -1
+        anchors.right: channelTableView.left
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
+        anchors.left: parent.left
         anchors.margins: 5
-        anchors.fill: parent
 
 
 
         TableViewColumn {
-            role: "date"    // Эти роли совпадают с названиями ролей в C++ модели
-            title: "Date"
+            role: "name"
+            title: "Название устройства"
         }
 
-        TableViewColumn {
-            role: "time"    // Эти роли совпадают с названиями ролей в C++ модели
-            title: "Time"
-        }
 
-        TableViewColumn {
-            role: "random"  // Эти роли совпадают с названиями ролей в C++ модели
-            title: "Random"
-        }
-
-        TableViewColumn {
-            role: "message" // Эти роли совпадают с названиями ролей в C++ модели
-            title: "Message"
-        }
     }
 
-     ToolSeparator {}
 
      TableView {
- //        id:deviceTableView
-         height: parent.height
-         width: parent.width - deviceTableView.width + 5
+         id:channelTableView
+         width: 300
+         anchors.rightMargin: 5
+         anchors.leftMargin: 200
+         anchors.right: parent.right
+         //  anchors.rightMargin: 203
+         anchors.bottomMargin: 5
+         anchors.topMargin: 5
+        // anchors.leftMargin: 237
+         anchors.left: deviceTableView.left
+         anchors.bottom: parent.bottom
+         anchors.top: parent.top
          anchors.margins: 5
-         anchors.fill: parent
 
 
 
          TableViewColumn {
-             role: "date"    // Эти роли совпадают с названиями ролей в C++ модели
-             title: "Date"
+             role: "name"
+             title: "Имя"
          }
 
          TableViewColumn {
-             role: "time"    // Эти роли совпадают с названиями ролей в C++ модели
+             role: "driver"
              title: "Time"
          }
 
          TableViewColumn {
-             role: "random"  // Эти роли совпадают с названиями ролей в C++ модели
+             role: "random"
              title: "Random"
          }
 
          TableViewColumn {
-             role: "message" // Эти роли совпадают с названиями ролей в C++ модели
+             role: "message"
              title: "Message"
          }
      }
 
 }
 
+
+/*##^## Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+ ##^##*/
