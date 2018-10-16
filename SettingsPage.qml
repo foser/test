@@ -23,7 +23,7 @@ Page {
        id: secondItem
        Loader {
        id: pageSecondLoader
-       source: "Page2.qml"
+       source: "ViewsPage.qml"
        anchors.fill: parent
        anchors.top: parent.top
        }
@@ -33,7 +33,7 @@ Page {
        id: thirdItem
        Loader {
        id: pageThirdLoader
-       source: "Page3.qml"
+       source: "PlacesPage.qml"
        anchors.fill: parent
        anchors.top: parent.top
        }
@@ -49,10 +49,10 @@ Page {
             text: "Устройства"
         }
         TabButton {
-            text: "Second"
+            text: "Представления"
         }
         TabButton {
-            text: "Third"
+            text: "Точки"
         }
     }
 }

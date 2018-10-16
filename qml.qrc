@@ -6,5 +6,7 @@
         <file>MonitoringPage.qml</file>
         <file>SettingsPage.qml</file>
         <file>DevicesPage.qml</file>
+        <file>ViewsPage.qml</file>
+        <file>TestModel.qml</file>
     </qresource>
 </RCC>

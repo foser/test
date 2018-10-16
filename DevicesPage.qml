@@ -12,7 +12,7 @@ Page{
         width: 200
         anchors.bottomMargin: 5
         anchors.rightMargin: 5
-        anchors.leftMargin: 8
+        anchors.leftMargin: 5
         anchors.right: channelTableView.left
         anchors.bottom: parent.bottom
         anchors.top: parent.top
@@ -68,14 +68,13 @@ Page{
 
 
             TableViewColumn {
-                role: "name"
-                title: "Название устройства"
+                role: "device"
+                title: "Устройства"
             }
 
         }
 
     }
-
 
 
 
@@ -85,10 +84,8 @@ Page{
          anchors.rightMargin: 5
          anchors.leftMargin: 200
          anchors.right: parent.right
-         //  anchors.rightMargin: 203
          anchors.bottomMargin: 5
          anchors.topMargin: 5
-        // anchors.leftMargin: 237
          anchors.left: overTableView.left
          anchors.bottom: parent.bottom
          anchors.top: parent.top
@@ -97,30 +94,16 @@ Page{
 
 
          TableViewColumn {
-             role: "name"
-             title: "Имя"
+             role: "prop"
+             title: "Свойство"
          }
 
          TableViewColumn {
-             role: "driver"
-             title: "Time"
+             role: "value"
+             title: "Значение"
          }
 
-         TableViewColumn {
-             role: "random"
-             title: "Random"
-         }
-
-         TableViewColumn {
-             role: "message"
-             title: "Message"
-         }
      }
 
 }
 
-
-/*##^## Designer {
-    D{i:0;autoSize:true;height:480;width:640}D{i:45;anchors_width:20;anchors_x:0}D{i:37;anchors_height:433}
-}
- ##^##*/
