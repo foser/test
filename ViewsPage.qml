@@ -113,13 +113,3 @@ Page {
 
 
 }
-
-
-
-
-/*##^## Designer {
-    D{i:0;autoSize:true;height:480;width:640}D{i:8;anchors_height:24;anchors_width:50}
-D{i:9;anchors_height:24;anchors_width:50}D{i:10;anchors_height:24;anchors_width:50}
-D{i:7;anchors_width:126;anchors_x:124}D{i:6;anchors_width:250}
-}
- ##^##*/

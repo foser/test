@@ -11,19 +11,24 @@ Rectangle {
 
     GridView {
         id: view
-
-        anchors.margins: 5
+        anchors.rightMargin: 0
+        anchors.leftMargin: 0
+        anchors.bottomMargin: 0
+        anchors.topMargin: 0
         anchors.fill: parent
-        cellHeight: 120
-        cellWidth: 120
+        anchors.margins: 15
+        cellHeight: 130
+        cellWidth: 130
         model: dataModel
-        clip: true
+        clip: false
         delegate: Item {
             property var view: GridView.view
             property var isCurrent: GridView.isCurrentItem
-
+            anchors.topMargin: 10
+            anchors.leftMargin: 10
             height: view.cellHeight
             width: view.cellWidth
+
 
             PieMenu {
                 id: pieMenu
@@ -53,7 +58,6 @@ Rectangle {
 
 
             RadialBar {
-
                 anchors.centerIn: parent
                 width: 100
                 height: 100
@@ -101,3 +105,8 @@ Rectangle {
 }
 
 
+
+/*##^## Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+ ##^##*/
