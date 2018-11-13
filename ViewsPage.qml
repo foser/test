@@ -26,7 +26,6 @@ Page {
                 }
     }
 
-
         ListView {
             id:channelInSet
             width: parent.width - 500
@@ -42,8 +41,6 @@ Page {
             delegate: Text {
                 text: name + ": " + number
             }
-
-
         }
 
     Rectangle {

@@ -8,5 +8,19 @@
         <file>DevicesPage.qml</file>
         <file>ViewsPage.qml</file>
         <file>TestModel.qml</file>
+        <file>AddDevicePage.qml</file>
+        <file>ButtonRaised.qml</file>
+        <file>ButtonFlat.qml</file>
+        <file>TESTTT.qml</file>
+        <file>deviceWizard/FirstPageDevWizard.qml</file>
+        <file>circlegauge.cpp</file>
+        <file>circlegauge.h</file>
+        <file>databaseaccessor.cpp</file>
+        <file>databaseaccessor.h</file>
+        <file>main.cpp</file>
+        <file>radialbar.cpp</file>
+        <file>radialbar.h</file>
+        <file>settings.cpp</file>
+        <file>settings.h</file>
     </qresource>
 </RCC>
